@@ -1,0 +1,40 @@
+{
+  "expo": {
+    "name": "KudiFlow",
+    "slug": "kudiflow",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "scheme": "kudiflow",
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "gh.kudiflow.app"
+    },
+    "android": {
+      "package": "gh.kudiflow.app",
+      "adaptiveIcon": {
+        "backgroundColor": "#131b2e",
+        "foregroundImage": "./assets/android-icon-foreground.png",
+        "backgroundImage": "./assets/android-icon-background.png",
+        "monochromeImage": "./assets/android-icon-monochrome.png"
+      },
+      "predictiveBackGestureEnabled": false
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      "expo-router",
+      "expo-status-bar",
+      [
+        "expo-secure-store",
+        {
+          "faceIDPermission": "KudiFlow uses Face ID to authenticate transactions securely."
+        }
+      ],
+      "expo-font",
+      "expo-splash-screen"
+    ]
+  }
+}

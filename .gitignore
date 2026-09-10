@@ -1,0 +1,42 @@
+# Environment
+.env
+.env.test
+.env*.test
+.env.local
+.env.*.local
+
+# Dependencies
+node_modules/
+.pnp
+.pnp.js
+
+# Build outputs
+dist/
+test-dist/
+build/
+.expo/
+.expo-shared/
+
+# TypeScript
+*.tsbuildinfo
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.idea/
+.vscode/settings.json
+
+# Test coverage
+coverage/
+
+# Mobile
+mobile/.expo/
+mobile/android/
+mobile/ios/
