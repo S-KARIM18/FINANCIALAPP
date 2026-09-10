@@ -4,6 +4,8 @@
 
 ![KudiFlow Architecture](docs/architecture.png)
 
+🎬 **[Watch Live Video Demonstration (appdemo.mp4)](https://github.com/S-KARIM18/FINANCIALAPP/blob/main/appdemo.mp4)** | 📄 **[Download Submission PDF (KudiFlow_Submission_AbdulKarimSalifu.pdf)](https://github.com/S-KARIM18/FINANCIALAPP/blob/main/KudiFlow_Submission_AbdulKarimSalifu.pdf)**
+
 ---
 
 ## 1. System Capabilities
@@ -136,4 +138,5 @@ All required technical challenge artifacts are located in the [`docs/`](docs/) d
 * 🧪 **Testing Evidence**: [`docs/testing-evidence.md`](docs/testing-evidence.md) *(Full Jest test reports & invariant verification)*
 * 📐 **Technical Decisions**: [`docs/technical-decisions.md`](docs/technical-decisions.md) *(Trade-offs, locks, token strategy, database choices)*
 * ⚠️ **Known Limitations**: [`docs/known-limitations.md`](docs/known-limitations.md) *(Production roadmap, external rails, compliance next steps)*
+* 🎬 **Live Video Demonstration**: [`appdemo.mp4`](https://github.com/S-KARIM18/FINANCIALAPP/blob/main/appdemo.mp4) *(Full mobile screen recording showing onboarding, login, real-time balance, deposit, P2P requests, bills, swipe-to-send slider, PIN auth, and settled receipt)*
 * 🎬 **Demo Script**: [`docs/demo-script.md`](docs/demo-script.md) *(Step-by-step verification walkthrough)*\n
