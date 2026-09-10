@@ -1,6 +1,5 @@
 # 02 — Mini Financial Platform (KudiFlow)
 
-> **House of Practice — 72-Hour Technical Challenge**  
 > A functional prototype of a digital financial platform engineered for financial correctness, double-entry ledger integrity, and fault tolerance.
 
 ![KudiFlow Architecture](docs/architecture.png)
