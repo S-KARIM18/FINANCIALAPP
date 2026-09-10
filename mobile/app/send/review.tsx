@@ -13,7 +13,6 @@ import {
   View,
   Text,
   StyleSheet,
-  ScrollView,
   TouchableOpacity,
   TextInput,
   Image,
@@ -21,6 +20,7 @@ import {
   Platform,
   Modal,
 } from 'react-native';
+import { ScrollView } from 'react-native-gesture-handler';
 import { useRouter, useLocalSearchParams } from 'expo-router';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { Ionicons, Feather } from '@expo/vector-icons';
@@ -101,6 +101,7 @@ export default function SendMoneyScreen() {
   const [pinError, setPinError] = useState<string | null>(null);
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [swipeCompleted, setSwipeCompleted] = useState(false);
+  const [isSwiping, setIsSwiping] = useState(false);
   const [inputError, setInputError] = useState<string | null>(null);
 
   // Financial calculations
@@ -179,6 +180,7 @@ export default function SendMoneyScreen() {
     setPinInput('');
     setPinError(null);
     setSwipeCompleted(false);
+    setIsSwiping(false);
   };
 
   const handleConfirmPin = (enteredPin: string) => {
@@ -250,6 +252,7 @@ export default function SendMoneyScreen() {
         style={{ flex: 1 }}
       >
         <ScrollView
+          scrollEnabled={!isSwiping}
           contentContainerStyle={styles.scrollContent}
           showsVerticalScrollIndicator={false}
           keyboardShouldPersistTaps="handled"
@@ -532,6 +535,8 @@ export default function SendMoneyScreen() {
                 <SwipeToSend
                   amount={formattedTotal}
                   onComplete={handleSwipeComplete}
+                  onSwipeStart={() => setIsSwiping(true)}
+                  onSwipeEnd={() => setIsSwiping(false)}
                   disabled={isSubmitting}
                   completed={swipeCompleted}
                 />
