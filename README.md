@@ -103,7 +103,7 @@ cd server
 npm install
 npm run db:migrate    # Run PostgreSQL migrations
 npm run seed          # Seed canonical demo accounts (Ama & Kwame)
-npm run dev           # Starts API server on http://localhost:5000
+npm run dev           # Starts API server on http://localhost:3000
 ```
 
 ### 2. Mobile App Setup

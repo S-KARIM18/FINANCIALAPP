@@ -19,7 +19,7 @@ import {
 } from '@expo-google-fonts/plus-jakarta-sans';
 import * as SplashScreen from 'expo-splash-screen';
 import { GestureHandlerRootView } from 'react-native-gesture-handler';
-import { StyleSheet } from 'react-native';
+import { StyleSheet, Platform } from 'react-native';
 import { useAuthStore, initAuthCallbacks } from '../store/auth.store';
 
 // Prevent splash from auto-hiding — we control it
@@ -69,5 +69,15 @@ export default function RootLayout() {
 const styles = StyleSheet.create({
   root: {
     flex: 1,
+    backgroundColor: '#F8F9FD',
+    ...(Platform.OS === 'web'
+      ? {
+          maxWidth: 480,
+          width: '100%',
+          marginHorizontal: 'auto',
+          minHeight: '100vh' as any,
+          boxShadow: '0 10px 30px rgba(0, 0, 0, 0.08)' as any,
+        }
+      : {}),
   },
 });
